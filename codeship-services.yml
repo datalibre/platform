@@ -1,6 +1,12 @@
-app:
+nginx:
   build:
-    image: app
+    image: nginx
+    path: nginx
+    dockerfile_path: Dockerfile
+web:
+  build:
+    image: web
+    path: web
     dockerfile_path: Dockerfile
   environment:
     REDIS_URL: "redis://redis:6379"
@@ -11,6 +17,6 @@ app:
     - redis
     - postgres
 redis:
-  image: redis:3.0.2
+  image: redis:latest
 postgres:
-   image: postgres:9.4.3
+   image: postgres:latest
