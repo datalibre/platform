@@ -1,4 +1,4 @@
-[ ![Codeship Status for datalibre/platform](https://codeship.com/projects/c5938930-37f2-0134-03fd-460717981076/status?branch=master)](https://codeship.com/projects/165913)
+[ ![Codeship Status for datalibre/platform](https://codeship.com/projects/088aac40-3801-0134-d098-460717981076/status?branch=master)](https://codeship.com/projects/165932)
 
 ## dataLibre platform
 
