@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-all: build db run
+all: build migrate run
 
 run: build
 	docker-compose up
@@ -27,4 +27,4 @@ logs:
 migrate: build
 	docker-compose run web /usr/local/bin/python manage.py migrate
 
-.PHONY: all run build stop restart mac-open clean test logs db production-build
+.PHONY: all run build stop restart mac-open clean test logs migrate production-build
